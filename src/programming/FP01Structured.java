@@ -8,8 +8,8 @@ public class FP01Structured {
 		printAllNumbersInStructured(List.of(1, 3, 2, 4, 2, 3));
 	}
 
-	private static void printAllNumbersInStructured(List<Integer> list) {
-		for (Integer num : list) {
+	private static void printAllNumbersInStructured(List<Integer> numbers) {
+		for (Integer num : numbers) {
 			System.out.println(num);
 		}
 	}
