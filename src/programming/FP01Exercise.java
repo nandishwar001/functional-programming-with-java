@@ -11,6 +11,18 @@ public class FP01Exercise {
 		printAllCourses(courses);
 		printSpringCourses(courses);
 		printCoursesWithLengthAtleastFour(courses);
+		List<Integer> numbers = List.of(8, 5, 3, 4, 9);
+		printCubesOfOddNumbers(numbers);
+		printNoOfCharactersInCourse(courses);
+	}
+
+	private static void printNoOfCharactersInCourse(List<String> courses) {
+		courses.stream().map(course -> course.length()).forEach(System.out::println);
+	}
+
+	private static void printCubesOfOddNumbers(List<Integer> numbers) {
+		numbers.stream().filter(number -> number % 2 != 0).map(number -> number * number * number)
+				.forEach(System.out::println);
 	}
 
 	private static void printCoursesWithLengthAtleastFour(List<String> courses) {
